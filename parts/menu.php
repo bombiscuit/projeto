@@ -28,7 +28,7 @@
                             <a class="nav-link" href="#contato"><span>Contato</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled" href="#" data-toggle="modal" data-target="#cadastrar"><span>Acesso</span></a>
+                            <a class="nav-link" href="#" data-toggle="modal" data-target="#cadastrar"><span>Acesso</span></a>
                         </li>
                         
                     </ul>
