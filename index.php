@@ -17,7 +17,7 @@
 <body id="topo">
    <div class="container-fluid" style="margin:0; padding:0">
        
-   
+   <!-- incluindo as paginas do layout com php-->
     <?php 
     include'parts/menu.php';
     include'parts/sobre.php';
