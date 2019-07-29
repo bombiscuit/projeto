@@ -1,6 +1,6 @@
 <div id ="sobre" class="pre-space"></div>
 <!-- sobre -->
-<div class="row" style="margin-bottom:50px;">
+<div class="row"  style="margin-bottom:50px;">
    <div id="sumir" class="col-xs-12 col-md-6">
         <div id="about">
             <img src="img/isa.png">

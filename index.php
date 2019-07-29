@@ -80,6 +80,8 @@
     </script> 
     <!--fim do js menu -->
     </div>
+    </div>
+        
     <?php include_once 'parts/modalAcesso.php'?>
 </body>
 </html>
