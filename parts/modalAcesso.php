@@ -8,10 +8,8 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-    
-      <form action="?acesso" method="post">
-          
-          
+	  
+      <form action="?acesso" method="post">        
           <div class="modal-body">
         
             <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -32,6 +30,14 @@
             <button type="submit" class="btn btn-primary">Enviar</button>
           </div>
           
+          <?php
+//            if(!isset($_SESSION['Login'])){
+//               include 'parts/tab-login.php';
+//                include 'parts/tab-pane.php';
+//            }else{
+//                include 'parts/dados-usuario.php';
+//            }
+          ?>
           
       </form>
     </div>

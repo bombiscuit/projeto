@@ -1,4 +1,6 @@
 <!-- cadastro-->
+<form class="form-inline" action="cnf/login.php" method="post" enctype="multipart/form-data">
+
 <div class="tab-pane fade show active" id="cadastro" role="tabpanel" aria-labelledby="cadastro-tab">
 	<div class="form-group">
 			<label for="name">Nome</label>
@@ -37,6 +39,6 @@
         <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
     </div>
 </div>
-
+</form>
 
 

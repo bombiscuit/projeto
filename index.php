@@ -1,3 +1,13 @@
+<?php session_start();?>
+<?php
+if(isset($_GET['Log-off'])){
+    session_destroy();
+    ?>
+    <meta http-equiv="refresh" content="0;index.php">
+    <?php
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,9 +16,9 @@
     <link rel="stylesheet" type="text/css" href="css/estilo.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" cntent="width=device-width, initial-scale=1">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="font/icons/glyphicons-halflings-regular.ttf">
     <link rel="stylesheet" href="icones/css/all.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 
@@ -26,12 +36,12 @@
     
     <!-- banner2-->
     <div class="row">
-	<div id="bbiscuit" class="col-xs-12 col-md-12"  style="padding:0">
-		<div id="opacity">
-		<h3 class="titles"> Bon Biscuit </h3>
-		<p class="subt"> Perfeitos para você! </p>
-		</div>
-	</div>
+        <div id="bbiscuit" class="col-xs-12 col-md-12"  style="padding:0">
+            <div id="opacity">
+            <h3 class="titles"> Bon Biscuit </h3>
+            <p class="subt"> Perfeitos para você! </p>
+            </div>
+        </div>
 	</div>
 	<!--fim do banner -->
 	
@@ -79,9 +89,7 @@
         });
     </script> 
     <!--fim do js menu -->
-    </div>
-    </div>
-        
-    <?php include_once 'parts/modalAcesso.php'?>
+    </div>       
+   <?php include_once 'parts/modalAcesso.php'?>
 </body>
 </html>

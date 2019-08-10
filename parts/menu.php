@@ -13,29 +13,25 @@
                 <span class="fas fa-bars text-warning btn-menu-collapsed"></span>
             </button>
 
-
-
             <div class="col-sm-12 col-md-12 col-lg-10 col-xl-11 block-menu-collapse bg" style="width:100%">
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto menu">
                         <li class="nav-item active">     
-                            <a class="nav-link" href="#sobre" ><span>Sobre</span></a>
+                            <a class="nav-link" href="?parts=sobre" ><span>Sobre</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#blogs"><span>Blogs</span></a>
+                            <a class="nav-link" href="?parts=blogs"><span>Blogs</span></a>
                         </li>     
                         <li class="nav-item">
-                            <a class="nav-link" href="#contato"><span>Contato</span></a>
+                            <a class="nav-link" href="?parts=contato"><span>Contato</span></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#" data-toggle="modal" data-target="#cadastrar"><span>Acesso</span></a>
                         </li>
-                        
-                    </ul>
+                   </ul>
                 </div>
             </div>
-
-
+  
         </nav>
     </div>
 </div>
