@@ -1,5 +1,5 @@
 <!-- Modal -->
-<div class="modal fade" id="cadastrar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true" style="top: 15%">
+<div class="modal fade" id="cadastrar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true" style="top: 6%">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">

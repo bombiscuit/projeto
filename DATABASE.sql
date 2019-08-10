@@ -21,6 +21,7 @@ CREATE TABLE usuarios(
     apelido_usuario varchar(255) NULL,
     telefone_usuario varchar(11) NULL,
     email_usuario varchar(255) NOT NULL,
+    senha_usuario varchar(255) NOT NULL,
     foto_usuario int,
     foreign key (foto_usuario) references fotos (id_foto)
 )ENGINE=InnoDB;

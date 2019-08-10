@@ -2,7 +2,7 @@
 $host = "localhost";
 $user = "root";
 $pass = "";
-$database = "sistema_teste";
+$database = "bbiscuit";
 
 $connection = mysqli_connect($host,$user,$pass,$database);
 

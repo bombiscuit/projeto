@@ -1,5 +1,8 @@
-<?php session_start();?>
 <?php
+require 'cnf/config.php';
+
+session_start();
+
 if(isset($_GET['Log-off'])){
     session_destroy();
     ?>
