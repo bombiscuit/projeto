@@ -3,6 +3,8 @@ require 'cnf/config.php';
 
 session_start();
 
+if(isset($_GET['acesso'])){include 'cnf/login.php';}
+
 if(isset($_GET['Log-off'])){
     session_destroy();
     ?>
@@ -35,6 +37,9 @@ if(isset($_GET['Log-off'])){
     include'parts/menu.php';
     include'parts/sobre.php';
     include'parts/blog.php';
+    
+    print_r($_SESSION['Login'])   ;
+    
     ?>
     
     <!-- banner2-->

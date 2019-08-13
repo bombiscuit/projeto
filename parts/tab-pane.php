@@ -1,5 +1,5 @@
 <!-- cadastro-->
-<form class="form-inline" action="cnf/login.php" method="post" enctype="multipart/form-data">
+
 
 <div class="tab-pane fade show active" id="cadastro" role="tabpanel" aria-labelledby="cadastro-tab">
 	<div class="form-group">
@@ -13,32 +13,33 @@
 			<small ></small>
 	</div>
 	<div class="form-group">
-			<label for="email">Email address</label>
-			<input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter email">
+			<label for="email_cadastro">Endereço de E-mail</label>
+			<input type="email" class="form-control" id="email_cadastro" name="email_cadastro" aria-describedby="emailHelp" placeholder="Enter email">
         <small id="emailHelp" class="form-text text-muted"></small>
     </div>
     <div class="form-group">
-        <label for="exampleInputPassword1">Senha</label>
-        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        <label for="senha_cadastro">Senha</label>
+        <input type="password" class="form-control" id="senha_cadastro" name="senha_cadastro" placeholder="Password">
     </div>
+<!--
 	<div class="form-group">
         <label for="exampleInputPassword1">Confirmar senha</label>
         <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
     </div>
+-->
 </div>
        
   <!-- login -->
 <div class="tab-pane fade" id="login" role="tabpanel" aria-labelledby="login-tab">
     <div class="form-group">
-        <label for="email">Email address</label>
-        <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter email">
+        <label for="email_cadastrado">E-mail Cadastrado</label>
+        <input type="email" class="form-control" id="email_cadastrado" name="email_cadastrado" aria-describedby="emailHelp" placeholder="Enter email">
         <small id="emailHelp" class="form-text text-muted"></small>
     </div>
     <div class="form-group">
-        <label for="exampleInputPassword1">Password</label>
-        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        <label for="senha_cadastrada">Password</label>
+        <input type="password" class="form-control" id="senha_cadastrada" name="senha_cadastrada" placeholder="Password">
     </div>
 </div>
-</form>
 
 

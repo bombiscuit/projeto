@@ -26,10 +26,31 @@
                             <a class="nav-link" href="?parts=contato"><span>Contato</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" data-toggle="modal" data-target="#cadastrar"><span>Acesso</span></a>
+                            <?php
+                                if(isset($_SESSION['Login'])){
+                                    ?>
+                                    <a class="nav-link" href="?Log-off">
+
+                                        <span>Fazer Log-off</span>
+
+                                    </a>
+                                    <?php
+                                }else{
+                                    
+                            ?>
+                            <a class="nav-link" href="#" data-toggle="modal" data-target="#cadastrar">
+                            
+                               <span>Acesso</span>
+                            
+                            </a>
+                            <?php
+                                }
+                            ?>                            
                         </li>
                    </ul>
+                   <img src="img/usuarios/<?php echo $_SESSION['Login']['foto_usuario']?>" alt="<?php echo $_SESSION['Login']['nome_usuario']?>">
                 </div>
+                
             </div>
   
         </nav>

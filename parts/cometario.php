@@ -20,5 +20,3 @@
             include 'parts/Home.php';
         }
     ?>
-    
-</div>

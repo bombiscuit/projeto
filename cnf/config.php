@@ -1,7 +1,8 @@
 <?php 
 
 // invocando a conexão com o banco de dados 
-include 'conection.php';
+include 'connection.php';
+include 'login.php';
 
 
 ?>

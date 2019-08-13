@@ -9,7 +9,7 @@
         </button>
       </div>
 	  
-      <form action="?acesso" method="post">        
+      <form action="?acesso" method="post" enctype="multipart/form-data">        
           <div class="modal-body">
         
             <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -27,7 +27,7 @@
           </div>
           <div class="modal-footer">
             <button type="reset" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="submit" class="btn btn-primary">Enviar</button>
+            <input type="submit" class="btn btn-primary" value="Enviar">
           </div>
           
           <?php
