@@ -18,11 +18,10 @@ CREATE TABLE fotos(
 CREATE TABLE usuarios(
     id_usuario int(3) PRIMARY KEY NOT NULL AUTO_INCREMENT,
     nome_usuario varchar(255) NOT NULL,
-    apelido_usuario varchar(255) NULL,
     telefone_usuario varchar(11) NULL,
     email_usuario varchar(255) NOT NULL,
     senha_usuario varchar(255) NOT NULL,
-    foto_usuario int,
+    foto_usuario varchar(255) default 'usuario',
     foreign key (foto_usuario) references fotos (id_foto)
 )ENGINE=InnoDB;
 

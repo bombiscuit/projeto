@@ -11,6 +11,26 @@ if(isset($_GET['Log-off'])){
     <meta http-equiv="refresh" content="0;index.php">
     <?php
 }
+
+if(!empty($_POST['name'])){
+    echo $name = $_POST['name'];
+    echo $telefone =$_POST['tel'];
+    echo $email = $_POST['email_cadastro'];
+    echo $senha = $_POST['senha_cadastro'];
+    
+    echo $insert_table = "INSERT INTO usuarios(nome_usuario,telefone_usuario,email_usuario,senha_usuario) VALUES('$name','$telefone','$email','$senha')";
+    
+    $validando_insert = mysqli_query($connection,$insert_table);
+    
+    if($validando_insert) {
+        echo "deu certo";
+    }else{
+        
+        echo mysqli_error();
+    }
+}
+
+
 ?>
 
 <!DOCTYPE html>
@@ -38,7 +58,7 @@ if(isset($_GET['Log-off'])){
     include'parts/sobre.php';
     include'parts/blog.php';
     
-    print_r($_SESSION['Login'])   ;
+//    print_r($_SESSION['Login'])   ;
     
     ?>
     

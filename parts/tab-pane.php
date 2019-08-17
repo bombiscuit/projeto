@@ -9,7 +9,7 @@
 	</div>
 	<div class="form-group">
 			<label for="tel">Telefone</label>
-			<input type="tel" class="form-control" id="tel" name="tel" placeholder=" (DDD) & telefone">
+			<input type="tel" class="form-control" id="tel" name="tel" max="11" placeholder=" (DDD) & telefone">
 			<small ></small>
 	</div>
 	<div class="form-group">
@@ -21,12 +21,7 @@
         <label for="senha_cadastro">Senha</label>
         <input type="password" class="form-control" id="senha_cadastro" name="senha_cadastro" placeholder="Password">
     </div>
-<!--
-	<div class="form-group">
-        <label for="exampleInputPassword1">Confirmar senha</label>
-        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-    </div>
--->
+
 </div>
        
   <!-- login -->

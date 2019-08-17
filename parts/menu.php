@@ -48,7 +48,13 @@
                             ?>                            
                         </li>
                    </ul>
-                   <img src="img/usuarios/<?php echo $_SESSION['Login']['foto_usuario']?>" alt="<?php echo $_SESSION['Login']['nome_usuario']?>">
+                   <?php
+                    if(isset($_SESSION['Login'])){
+                    ?>
+                   <img class="photo img-fluid " src="img/usuarios/<?php echo $_SESSION['Login']['foto_usuario']?>.jpg" alt="<?php echo $_SESSION['Login']['nome_usuario']?>">
+                   <?php
+                    }
+                    ?>
                 </div>
                 
             </div>
