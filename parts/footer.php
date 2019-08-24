@@ -24,27 +24,30 @@
       <div class="col-xs-12 col-md-9 contato2">
         <h2 class="titles">Bon Biscuit</h2>
         <p class="inpotex">Solicite seus biscoitos</p>
-            <form action="#" class="inline-form">
+            <form action="#" class="inline-form" method="post" enctype="multipart/form-data">
                 <div class="form-row">
                     <div class="form-group col-xs-12 col-md-4">
                         <label for="nome">Nome: </label>
-                        <input type="text" name="nome" class="form-control" placeholder="Seu nome">
+                        <input type="text" name="NomeEnvioEmail" class="form-control" placeholder="Seu nome">
                     </div>
                     <div class="form-group col-xs-12 col-md-4">
                         <label for="nome">Telefone: </label>
-                        <input type="text" name="nome" class="form-control" placeholder="Seu telefone">
+                        <input type="text" name="TelEnvioEmail" class="form-control" placeholder="Seu telefone">
                     </div>
                     <div class="form-group col-xs-12 col-md-4">
                         <label for="nome">E-mail: </label>
-                        <input type="text" name="nome" class="form-control" placeholder="Seu e-mail">
+                        <input type="text" name="EmailEnvioEmail" class="form-control" placeholder="Seu e-mail">
                     </div>
                 </div>
                
                 
-                <div class="form-row">
-                    <div class="form-group col-xs-12 col-md-12">
+                <div class="form-row row align-items-center">
+                    <div class="form-group col-xs-10 col-md-10">
                         <label for="nome">Mensagem: </label>
-                        <textarea name="nome" class="form-control" placeholder="Digite sua mensagem aqui"></textarea>
+                        <textarea name="MSGEnvioEmail" class="form-control" placeholder="Digite sua mensagem aqui"></textarea>
+                    </div>
+                    <div class="col-xs-1" style="padding-left: 5%;padding-top: 20px;">
+                        <input type="submit" class="btn btn-danger" name="enviarEmail">
                     </div>
                 </div>
             </form>

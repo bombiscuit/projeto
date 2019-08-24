@@ -1,6 +1,5 @@
 CREATE DATABASE bbiscuit DEFAULT CHARSET=utf8 COLLATE=utf8_general_mysql500_ci;
-
-Use bbiscuit;
+    
 
 CREATE TABLE contato_cliente(
     id_contato int(3) PRIMARY KEY NOT NULL AUTO_INCREMENT,
@@ -21,8 +20,7 @@ CREATE TABLE usuarios(
     telefone_usuario varchar(11) NULL,
     email_usuario varchar(255) NOT NULL,
     senha_usuario varchar(255) NOT NULL,
-    foto_usuario varchar(255) default 'usuario',
-    foreign key (foto_usuario) references fotos (id_foto)
+    foto_usuario varchar(255) default 'usuario'
 )ENGINE=InnoDB;
 
 CREATE TABLE mensagens(

@@ -51,7 +51,7 @@
                    <?php
                     if(isset($_SESSION['Login'])){
                     ?>
-                   <img class="photo img-fluid " src="img/usuarios/<?php echo $_SESSION['Login']['foto_usuario']?>.jpg" alt="<?php echo $_SESSION['Login']['nome_usuario']?>">
+                   <img class="photo img-fluid " src="img/usuarios/<?php echo $_SESSION['Login']['foto_usuario']?>.jpg" alt="<?php echo $_SESSION['Login']['nome_usuario']?>" title="<?php echo $_SESSION['Login']['nome_usuario']?>">
                    <?php
                     }
                     ?>

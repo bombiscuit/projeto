@@ -18,18 +18,43 @@ if(!empty($_POST['name'])){
     echo $email = $_POST['email_cadastro'];
     echo $senha = $_POST['senha_cadastro'];
     
-    echo $insert_table = "INSERT INTO usuarios(nome_usuario,telefone_usuario,email_usuario,senha_usuario) VALUES('$name','$telefone','$email','$senha')";
+   //enviando as informações que vem do formulario para o banco de dados
+    $insert_table = "INSERT INTO usuarios(nome_usuario,telefone_usuario,email_usuario,senha_usuario) VALUES('$name','$telefone','$email','$senha')";
     
     $validando_insert = mysqli_query($connection,$insert_table);
     
-    if($validando_insert) {
-        echo "deu certo";
-    }else{
-        
-        echo mysqli_error();
-    }
+    
+    //debug para ver se estar cadastrando as informações no banco   
+//    if($validando_insert) {
+//        echo "deu certo";
+//    }else{
+//        
+//        echo mysqli_error();
+//    }
+    
 }
 
+if(isset($_POST['enviarEmail'])){
+    $NomeEnvioEmail = $_POST['NomeEnvioEmail'];
+    $TelEnvioEmail = $_POST['TelEnvioEmail'];
+    $EmailEnvioEmail = $_POST['EmailEnvioEmail'];
+    
+    $MSGEnvioEmail = $_POST['MSGEnvioEmail'];
+    
+    $msg = wordwrap('
+    
+    O cliente: '.$NomeEnvioEmail.'<br>
+    Telefone: '.$TelEnvioEmail.'<br>
+    E-mail de contato: '.$EmailEnvioEmail.'<br>
+    
+    Mensagem: '.$MSGEnvioEmail.'
+    
+    ',70);
+    
+    
+    mail("hugo.allnet@gmail.com","Pedido",$msg);
+    
+}
 
 ?>
 
